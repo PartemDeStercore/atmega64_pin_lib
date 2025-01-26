@@ -1,5 +1,6 @@
 #ifndef PIN_H
 #define PIN_H
+#include <stdint.h>
 #include <avr/io.h>
 
 typedef enum {
@@ -81,7 +82,7 @@ typedef struct {
 #define G6 PIN(G,6)
 #define G7 PIN(G,7)
 
-void pin_setmode(pin_t, mode_t);
+void pin_setmode(pin_t, uint8_t);
 void port_config(port_t,uint8_t);
 void pin_set(pin_t);
 void pin_reset(pin_t);
