@@ -86,4 +86,5 @@ void pin_setmode(pin_t, uint8_t);
 void port_config(port_t,uint8_t);
 void pin_set(pin_t);
 void pin_reset(pin_t);
+pin_t str_to_pin(char*);
 #endif //PIN_H

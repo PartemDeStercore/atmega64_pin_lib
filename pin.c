@@ -107,3 +107,10 @@ void pin_reset(pin_t pin){
 			break;
 	}	
 }
+pin_t str_to_pin(char* str){
+	pin_t ans;
+	if (str[0]>='A' && str[0]<='G')ans.port=(port_t)(str[0]-'A');
+	else ans.port=na;
+	ans.pin=str[1]-'0';
+	return ans;
+}
